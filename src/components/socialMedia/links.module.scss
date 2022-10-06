@@ -1,0 +1,51 @@
+.wrapper {
+  margin: 3rem 1.6rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: max-content;
+  padding: 1rem;
+  gap: 1rem;
+  background: transparent;
+  @media (max-width: 610px) {
+    flex-direction: row;
+    padding: 1rem 1.6rem;
+    margin: 0rem 0rem;
+  }
+  
+  a {
+    svg {
+      color: white;
+      @media (max-width: 1200px) {
+        width: 40px;
+      }
+      @media (max-width: 715px) {
+        width: 30px;
+      }
+      &:hover {
+        animation-name: example;
+        transition: all 1.3s ease;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        color: rgb(255, 7, 222);
+      }
+    }
+  }
+}
+@keyframes example {
+  0% {
+    color: rgb(255, 7, 222);
+  }
+  25% {
+    color: rgb(0, 255, 60);
+  }
+  50% {
+    color: rgb(255, 247, 0);
+  }
+  70% {
+    color: rgb(0, 195, 255);
+  }
+  100% {
+    color: rgb(255, 7, 222);
+  }
+}

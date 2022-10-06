@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+  border: 6px solid #ffffff;
+  border-radius: 61px;
+  gap: 1rem;
+  img {
+    width: 200px;
+    border-radius: 100%;
+  }
+  .info {
+    width: 70%;
+    font-family: "Hammersmith One";
+
+    h2 {
+      font-size: 28px;
+      padding: 1rem 0;
+    }
+    p {
+      padding: 1rem 0;
+      font-size: 28px;
+    }
+  }
+}

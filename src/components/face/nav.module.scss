@@ -1,0 +1,31 @@
+.face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  color: red;
+  height: 90vh;
+
+  :global {
+    img {
+      width: 370px;
+      height: auto;
+      transition: all 1.3s ease;
+      transform: translate(0, -50px);
+      filter: drop-shadow(0px 8px 63px rgba(255, 255, 255, 0.6));
+      @media (max-width: 1200px) {
+        width: 270px;
+      }
+      @media (max-width: 715px) {
+        width: 170px;
+      }
+      &:hover {
+        // filter: drop-shadow(0px 8px 103px rgb(255, 7, 222));
+        // animation-name: example;
+        transition: all 1.3s ease;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+}

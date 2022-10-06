@@ -1,0 +1,7 @@
+@mixin rgbOn {
+  animation-name: example;
+  transition: all 1.3s ease;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+

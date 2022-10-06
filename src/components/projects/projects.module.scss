@@ -1,0 +1,74 @@
+.wrapper {
+  padding: 4vw 6vw;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .projects {
+    border: 11px solid #ffffff;
+    border-radius: 61px;
+    padding: 34px 76px 42px;
+
+    .title {
+      font-family: "MuseoModerno";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 58px;
+      line-height: 92px;
+
+      color: #ffffff;
+
+      text-align: center;
+    }
+
+    .projects-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 11px 0;
+      gap: 84px 61px;
+
+      .technology {
+        border-radius: 13px;
+        overflow: hidden;
+        width: max-content;
+        .img {
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+    .see {
+      font-family: "MuseoModerno";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 38px;
+      text-align: center;
+
+      color: #ffffff;
+
+      border: 1px solid #000000;
+      cursor: pointer;
+      margin-top: 73px;
+    }
+  }
+
+  @media (max-width: 478px) {
+    .title {
+      font-size: 24px;
+      background-color: red;
+    }
+    .projects {
+      padding: 12px 18px 24px;
+    }
+  }
+
+  @media (max-width: 730px) {
+    .projects {
+      padding: 16px 20px 32px;
+    }
+  }
+}

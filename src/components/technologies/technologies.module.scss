@@ -1,0 +1,59 @@
+.wrapper {
+  padding: 4vw 6vw;
+
+  .technologies {
+    border: 11px solid #ffffff;
+    border-radius: 61px;
+    padding: 34px 77px 84px;
+    overflow: hidden;
+
+    .title {
+      font-family: "MuseoModerno";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 58px;
+      line-height: 92px;
+
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .technologies-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 11px 0;
+      gap: 84px 61px;
+
+      .technology {
+        border-radius: 13px;
+        width: max-content;
+        .img {
+          width: 100px;
+        }
+      }
+    }
+
+    @media (max-width: 800px) {
+      .title {
+        font-size: 40px;
+      }
+
+      padding: 24px 57px 60px;
+    }
+    @media (max-width: 600px) {
+      .title {
+        font-size: 32px;
+      }
+
+      padding: 24px 33px 30px;
+    }
+    @media (max-width: 478px) {
+      .title {
+        font-size: 24px;
+      }
+      padding: 12px 16px 15px;
+    }
+  }
+}
